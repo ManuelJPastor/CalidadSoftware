@@ -24,10 +24,15 @@
   </dependencies>
   
   <distributionManagement>
-    <repository>
-        <id>nexus-releases</id>
-        <name>releases</name>
-        <url>http://myNexus/more/stuff</url>
-    </repository>
+     <repository>
+       <id>my_artifactory</id>
+       <name>Release Repository</name>
+       <url>https://openwebinars.net/artifactory/libs-release-local</url>
+     </repository>
+      <snapshotRepository>
+       <id>my_artifactory</id>
+       <name>Snapshot Repository</name>
+        <url>https://openwebinars.net/artifactory/libs-snapshot-local</url>
+     </snapshotRepository>
 </distributionManagement>
 </project>
